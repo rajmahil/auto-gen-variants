@@ -12,14 +12,33 @@
   Auto-Generate Variants — Medusa Admin Widget
 </h1>
 
-<h4 align="center">
-  <a href="https://docs.medusajs.com">Documentation</a> |
-  <a href="https://www.medusajs.com">Website</a>
-</h4>
-
 <p align="center">
   Build and manage variants without the manual grind.
 </p>
+
+<p align="center">
+  <strong>Built by <a href="https://www.306technologies.com" target="_blank">306 Technologies</a></strong><br/>
+  Medusa & headless commerce experts — custom admin widgets, Algolia dashboards, and high-converting storefronts.
+</p>
+
+<p align="center">
+  <a href="https://www.306technologies.com" target="_blank">
+    <img src="https://img.shields.io/badge/Website-306%20Technologies-111827?logo=google-chrome" alt="306 Technologies Website"/>
+  </a>
+  <a href="https://cal.com/team/306-technologies/meeting-with-raj?overlayCalendar=true" target="_blank">
+    <img src="https://img.shields.io/badge/Book%20a%20Call-30%20min-2563EB?logo=google-calendar&logoColor=white" alt="Book a Call"/>
+  </a>
+  <a href="mailto:raj@306technologies.com" target="_blank">
+    <img src="https://img.shields.io/badge/Contact-raj%40306technologies.com-10B981?logo=minutemailer&logoColor=white" alt="Email 306 Technologies"/>
+  </a>
+</p>
+
+<hr/>
+
+<h4 align="center">
+  <a href="https://docs.medusajs.com">Medusa Docs</a> |
+  <a href="https://www.medusajs.com">Medusa Website</a>
+</h4>
 
 ---
 
@@ -30,9 +49,7 @@ A **Medusa.js admin widget** that automatically creates all **missing product va
 - 🚀 **1-click generation** of missing variants
 - 🧮 **Accurate combinations** from selected option values
 - 🛡️ **Non-destructive**: existing variants are left as-is
-- 🎯 **Built for Medusa v2 Admin** (Admin Bundler)
-
-> **Status:** Actively iterating on the **0.1.x** line before a stable `1.x`.
+- 🎯 **Built for Medusa v2 Admin**
 
 ---
 
