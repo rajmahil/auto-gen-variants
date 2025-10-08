@@ -66,12 +66,11 @@ npm i @306technologies/auto-gen-variants
 
 ### Widget not appearing
 
-**Fix checklist**
+**Reinstall clean**
 
-1. **Reinstall clean**
-   ```bash
-   npm uninstall @306technologies/auto-gen-variants
-   rm -rf node_modules package-lock.json
-   npm i
-   npm i @306technologies/auto-gen-variants@latest
-   ```
+```bash
+npm uninstall @306technologies/auto-gen-variants
+rm -rf node_modules package-lock.json
+npm i
+npm i @306technologies/auto-gen-variants@latest
+```
