@@ -313,8 +313,12 @@ const AutoGenerateVariants = ({
       toast.success("Variants created successfully");
       setVariantSheetOpen(false);
       setRowSelection({});
+      setStep("details");
+      form.reset();
     },
-    onError: () => {},
+    onError: () => {
+      toast.error("Failed to create variants. Please try again.");
+    },
   });
 
   const { mutate: updateProductMetadata } = useMutation({
@@ -401,11 +405,17 @@ const AutoGenerateVariants = ({
 
   /* --------------------------- DataTable --------------------------- */
 
+  const paginatedVariants = useMemo(() => {
+    const startIndex = pagination.pageIndex * pagination.pageSize;
+    const endIndex = startIndex + pagination.pageSize;
+    return variantsToGenerate.slice(startIndex, endIndex);
+  }, [variantsToGenerate, pagination.pageIndex, pagination.pageSize]);
+
   const table = useDataTable({
     columns,
-    data: variantsToGenerate, // [] while loading/empty
+    data: paginatedVariants,
     getRowId: (row) => row.id,
-    rowCount: variantsToGenerate.length, // 0 while loading/empty
+    rowCount: variantsToGenerate.length,
     isLoading,
     pagination: { state: pagination, onPaginationChange: setPagination },
     rowSelection: {
