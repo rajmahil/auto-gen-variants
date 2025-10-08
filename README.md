@@ -17,7 +17,7 @@
 
 ---
 
-<h4 align="center">Built by <a href="https://www.306technologies.com" target="_blank">306 Technologies</a></h4>
+<h3 align="center">Built by <a href="https://www.306technologies.com" target="_blank">306 Technologies</a></h3>
 <p align="center">
   Medusa & headless commerce experts — custom admin widgets, Algolia dashboards, and high-converting storefronts.
 </p>
