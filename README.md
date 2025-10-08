@@ -7,7 +7,7 @@
       <img alt="Medusa" src="https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg" height="56">
     </picture>
   </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
   <!-- 306 Technologies -->  
   <a href="https://www.306technologies.com" aria-label="306 Technologies">
     <picture>
