@@ -1,9 +1,24 @@
 <p align="center">
-  <a href="https://www.medusajs.com">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/59018053/229103275-b5e482bb-4601-46e6-8142-244f531cebdb.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg">
-    <img alt="Medusa logo" src="https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg">
+  <!-- Medusa -->
+  <a href="https://www.medusajs.com" aria-label="Medusa">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/59018053/229103275-b5e482bb-4601-46e6-8142-244f531cebdb.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg">
+      <img alt="Medusa" src="https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg" height="56">
+    </picture>
+  </a>
+
+  <!-- spacer -->
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+  <!-- 306 Technologies -->
+  <a href="https://www.306technologies.com" aria-label="306 Technologies">
+    <picture>
+      <!-- Replace these two srcset URLs with your own dark/light logo files -->
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/your-org/your-repo/main/assets/306-logo-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/your-org/your-repo/main/assets/306-logo-light.svg">
+      <img alt="306 Technologies" src="https://raw.githubusercontent.com/your-org/your-repo/main/assets/306-logo-light.svg" height="56">
     </picture>
   </a>
 </p>
