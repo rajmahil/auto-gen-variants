@@ -63,7 +63,7 @@ export const createDataGridPriceColumns = <
         header: () => (
           <div className="flex w-full items-center justify-between gap-3">
             <span className="truncate" title={translatedCurrencyName}>
-              {translatedCurrencyName}
+              Price {translatedCurrencyName}
             </span>
             <IncludesTaxTooltip includesTax={preference?.is_tax_inclusive} />
           </div>
@@ -100,7 +100,7 @@ export const createDataGridPriceColumns = <
         header: () => (
           <div className="flex w-full items-center justify-between gap-3">
             <span className="truncate" title={translatedRegionName}>
-              {translatedRegionName}
+              Price {translatedRegionName}
             </span>
             <IncludesTaxTooltip includesTax={preference?.is_tax_inclusive} />
           </div>

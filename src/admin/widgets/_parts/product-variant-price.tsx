@@ -47,7 +47,6 @@ const ProductVariantPrice = ({ form }: VariantPricingFormProps) => {
   }) as any;
 
   const columns = useVariantPriceGridColumns({
-    variants,
     currencies,
     regions,
     pricePreferences,
@@ -68,12 +67,10 @@ const columnHelper = createDataGridHelper<
 >();
 
 const useVariantPriceGridColumns = ({
-  variants = [],
   currencies = [],
   regions = [],
   pricePreferences = [],
 }: {
-  variants: HttpTypes.AdminProductVariant[];
   currencies?: HttpTypes.AdminStore["supported_currencies"];
   regions?: HttpTypes.AdminRegion[];
   pricePreferences?: HttpTypes.AdminPricePreference[];
