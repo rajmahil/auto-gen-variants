@@ -47,7 +47,6 @@ A **Medusa.js admin widget** that automatically creates all **missing product va
 ## Install
 
 ```bash
-# in your Medusa project
 npm i @306technologies/auto-gen-variants
 ```
 
@@ -67,6 +66,12 @@ export default defineConfig({
     },
   ],
 });
+```
+
+### Run development server
+
+```bash
+npm run dev
 ```
 
 ---
