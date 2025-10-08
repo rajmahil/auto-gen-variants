@@ -55,8 +55,8 @@ npm i @306technologies/auto-gen-variants
 
 **ESM / TypeScript** — `medusa.config.ts`
 
-````ts
-import { defineConfig } from "@medusajs/medusa"
+```ts
+import { defineConfig } from "@medusajs/medusa";
 
 export default defineConfig({
   // ...other settings
@@ -66,9 +66,8 @@ export default defineConfig({
       options: {}, // no options required
     },
   ],
-})
-
-
+});
+```
 
 ---
 
@@ -92,7 +91,7 @@ npm uninstall @306technologies/auto-gen-variants
 rm -rf node_modules package-lock.json
 npm i
 npm i @306technologies/auto-gen-variants@latest
-````
+```
 
 ---
 
