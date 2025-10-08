@@ -11,13 +11,14 @@
 <h1 align="center">
   Auto-Generate Variants — Medusa Admin Widget
 </h1>
-
 <p align="center">
   Build and manage variants without the manual grind.
 </p>
 
+---
+
+<h4>Built by <a href="https://www.306technologies.com" target="_blank">306 Technologies</a></h4>
 <p align="center">
-  <strong>Built by <a href="https://www.306technologies.com" target="_blank">306 Technologies</a></strong><br/>
   Medusa & headless commerce experts — custom admin widgets, Algolia dashboards, and high-converting storefronts.
 </p>
 
