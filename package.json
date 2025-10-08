@@ -1,6 +1,6 @@
 {
   "name": "@306technologies/auto-gen-variants",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Medusa.js admin widget that automatically generates product variants based on selected product options.",
   "author": "306 Technologies (https://www.306technologies.com/)",
   "license": "MIT",
@@ -77,5 +77,8 @@
   },
   "engines": {
     "node": ">=20"
+  },
+  "dependencies": {
+    "react-i18next": "^16.0.0"
   }
 }
