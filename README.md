@@ -53,7 +53,7 @@ npm i @306technologies/auto-gen-variants
 
 ### Add the plugin in your Medusa config
 
-**ESM / TypeScript** — `medusa.config.ts`
+`medusa.config.ts`
 
 ```ts
 import { defineConfig } from "@medusajs/medusa";
