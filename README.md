@@ -1,3 +1,6 @@
+<br/>
+<br/>
+
 <p align="center">
   <!-- Medusa -->
   <a href="https://www.medusajs.com" aria-label="Medusa">
