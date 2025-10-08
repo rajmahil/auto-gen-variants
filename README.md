@@ -7,8 +7,8 @@
       <img alt="Medusa" src="https://user-images.githubusercontent.com/59018053/229103726-e5b529a3-9b3f-4970-8a1f-c6af37f087bf.svg" height="56">
     </picture>
   </a>
-  <!-- 306 Technologies -->
-  <a href="https://www.306technologies.com" aria-label="306 Technologies">
+  <!-- 306 Technologies -->  
+  <a href="https://www.306technologies.com" aria-label="306 Technologies" style="margin-left: 40px;">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rajmahil/auto-gen-variants/refs/heads/main/src/assets/306-logo-light.svg">
       <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rajmahil/auto-gen-variants/refs/heads/main/src/assets/306-logo-light.svg">
