@@ -58,6 +58,18 @@
 
 # @306technologies/auto-gen-variants
 
+## Demo
+
+```html
+<video width="100%" controls>
+  <source
+    src="https://raw.githubusercontent.com/rajmahil/auto-gen-variants/refs/heads/main/src/assets/auto-gen-plugin-demo.mp4"
+    type="video/mp4"
+  />
+  Your browser does not support the video tag.
+</video>
+```
+
 A **Medusa.js admin widget** that automatically creates all **missing product variant combinations** from your product’s option values — no more manual setup.
 
 - 🚀 **1-click generation** of missing variants
