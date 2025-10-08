@@ -74,3 +74,11 @@ rm -rf node_modules package-lock.json
 npm i
 npm i @306technologies/auto-gen-variants@latest
 ```
+
+---
+
+## Links
+
+- **Website (306 Technologies):** https://www.306technologies.com
+- **X/Twitter** https://x.com/RajFrom306
+- **Linkedin** www.linkedin.com/in/raj-mahil
