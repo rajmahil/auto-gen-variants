@@ -10,7 +10,7 @@ import { IncludesTaxTooltip } from "../../components/tax-badge";
 
 type CreateDataGridPriceColumnsProps<
   TData,
-  TFieldValues extends FieldValues,
+  TFieldValues extends FieldValues
 > = {
   currencies?: string[];
   regions?: HttpTypes.AdminRegion[];
@@ -25,7 +25,7 @@ type CreateDataGridPriceColumnsProps<
 
 export const createDataGridPriceColumns = <
   TData,
-  TFieldValues extends FieldValues,
+  TFieldValues extends FieldValues
 >({
   currencies,
   regions,
@@ -45,15 +45,11 @@ export const createDataGridPriceColumns = <
         (p) => p.attribute === "currency_code" && p.value === currency
       );
 
-      const translatedCurrencyName = t("fields.priceTemplate", {
-        regionOrCurrency: currency.toUpperCase(),
-      });
+      const translatedCurrencyName = currency.toUpperCase();
 
       return columnHelper.column({
         id: `currency_prices.${currency}`,
-        name: t("fields.priceTemplate", {
-          regionOrCurrency: currency.toUpperCase(),
-        }),
+        name: currency.toUpperCase(),
         field: (context) => {
           const isReadyOnlyValue = isReadyOnly?.(context);
 
@@ -86,15 +82,11 @@ export const createDataGridPriceColumns = <
         (p) => p.attribute === "region_id" && p.value === region.id
       );
 
-      const translatedRegionName = t("fields.priceTemplate", {
-        regionOrCurrency: region.name,
-      });
+      const translatedRegionName = region.name;
 
       return columnHelper.column({
         id: `region_prices.${region.id}`,
-        name: t("fields.priceTemplate", {
-          regionOrCurrency: region.name,
-        }),
+        name: region.name,
         field: (context) => {
           const isReadyOnlyValue = isReadyOnly?.(context);
 
