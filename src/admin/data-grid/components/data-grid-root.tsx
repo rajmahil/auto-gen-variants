@@ -26,7 +26,6 @@ import React, {
   useState,
 } from "react";
 import { FieldValues, UseFormReturn } from "react-hook-form";
-import { useTranslation } from "react-i18next";
 
 import { DataGridContext } from "../context";
 import {
@@ -700,7 +699,6 @@ const DataGridHeader = ({
 }: DataGridHeaderProps) => {
   const [shortcutsOpen, setShortcutsOpen] = useState(false);
   const [columnsOpen, setColumnsOpen] = useState(false);
-  const { t } = useTranslation();
   const direction = useDocumentDirection();
 
   // Since all columns are checked by default, we can check if any column is unchecked
@@ -725,12 +723,13 @@ const DataGridHeader = ({
         >
           <ConditionalTooltip
             showTooltip={isDisabled}
-            content={t("dataGrid.columns.disabled")}
+            content={"Columns are disabled"}
           >
             <DropdownMenu.Trigger asChild disabled={isDisabled}>
               <Button size="small" variant="secondary">
                 {hasChanged ? <AdjustmentsDone /> : <Adjustments />}
-                {t("dataGrid.columns.view")}
+                <span>Columns</span>
+                {/* {t("dataGrid.columns.label")} --- IGNORE --- */}
               </Button>
             </DropdownMenu.Trigger>
           </ConditionalTooltip>
@@ -764,7 +763,7 @@ const DataGridHeader = ({
             className="text-ui-fg-muted hover:text-ui-fg-subtle"
             data-id="reset-columns"
           >
-            {t("dataGrid.columns.resetToDefault")}
+            Reset to Default
           </Button>
         )}
       </div>
@@ -780,11 +779,7 @@ const DataGridHeader = ({
             })}
           >
             <ExclamationCircle className="text-ui-fg-subtle" />
-            <span>
-              {t("dataGrid.errors.count", {
-                count: errorCount,
-              })}
-            </span>
+            <span>{`There are ${errorCount} errors`}</span>
           </Button>
         )}
         <DataGridKeyboardShortcutModal

@@ -2,7 +2,6 @@ import { useMemo } from "react";
 import { UseFormReturn, useWatch } from "react-hook-form";
 import { DataGrid, createDataGridHelper } from "../../data-grid";
 import { HttpTypes } from "@medusajs/framework/types";
-import { useTranslation } from "react-i18next";
 import { DataGridTextCell } from "../../data-grid/components";
 
 type ProductCreateSchemaType = any;
@@ -37,13 +36,11 @@ const columnHelper = createDataGridHelper<
 >();
 
 const useVariantInventoryGridColumns = () => {
-  const { t } = useTranslation();
-
   return useMemo(() => {
     return [
       columnHelper.column({
-        id: t("fields.title"),
-        header: t("fields.title"),
+        id: "Title",
+        header: "Title",
         cell: (context) => {
           const entity = context.row.original;
           return (
@@ -70,8 +67,8 @@ const useVariantInventoryGridColumns = () => {
       // Manage inventory (boolean)
       columnHelper.column({
         id: "manage_inventory",
-        name: t("fields.managedInventory"),
-        header: t("fields.managedInventory"),
+        name: "Manage Inventory",
+        header: "Manage Inventory",
         field: (context) => `variants.${context.row.index}.manage_inventory`,
         type: "boolean",
         cell: (context) => {
@@ -81,8 +78,8 @@ const useVariantInventoryGridColumns = () => {
       //   // Allow backorders (boolean)
       columnHelper.column({
         id: "allow_backorder",
-        name: t("fields.allowBackorder"),
-        header: t("fields.allowBackorder"),
+        name: "Allow Backorders",
+        header: "Allow Backorders",
         field: (context) => `variants.${context.row.index}.allow_backorder`,
         type: "boolean",
         cell: (context) => {
@@ -90,7 +87,7 @@ const useVariantInventoryGridColumns = () => {
         },
       }),
     ];
-  }, [t]);
+  }, []);
 };
 
 export default ProductVariantInventory;

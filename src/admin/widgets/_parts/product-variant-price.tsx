@@ -6,8 +6,6 @@ import {
   createDataGridPriceColumns,
 } from "../../data-grid";
 import { HttpTypes } from "@medusajs/framework/types";
-import { useTranslation } from "react-i18next";
-
 import { sdk } from "../../lib/sdk";
 import { useQuery } from "@tanstack/react-query";
 
@@ -80,13 +78,11 @@ const useVariantPriceGridColumns = ({
   regions?: HttpTypes.AdminRegion[];
   pricePreferences?: HttpTypes.AdminPricePreference[];
 }) => {
-  const { t } = useTranslation();
-
   return useMemo(() => {
     return [
       columnHelper.column({
-        id: t("fields.title"),
-        header: t("fields.title"),
+        id: "Title",
+        header: "Title",
         cell: (context) => {
           const entity = context.row.original;
           return (
@@ -113,7 +109,7 @@ const useVariantPriceGridColumns = ({
           }
           return `variants.${context.row.index}.prices.${value}`;
         },
-        t,
+        t: (key: any) => key,
       }),
     ];
   }, [currencies, regions, pricePreferences]);

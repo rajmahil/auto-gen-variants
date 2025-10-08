@@ -4,7 +4,6 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useRevalidator } from "react-router-dom";
-import { useTranslation } from "react-i18next";
 
 import { defineWidgetConfig } from "@medusajs/admin-sdk";
 import {
@@ -173,7 +172,6 @@ const getVariantsToCreate = (
 const AutoGenerateVariants = ({
   data: product,
 }: DetailWidgetProps<AdminProduct>) => {
-  const { t } = useTranslation();
   const dialog = usePrompt();
   const queryClient = useQueryClient();
   const { revalidate } = useRevalidator();
@@ -557,14 +555,14 @@ const AutoGenerateVariants = ({
                         size="small"
                         type="button"
                       >
-                        {t("actions.cancel")}
+                        Cancel
                       </Button>
                     </FocusModal.Close>
 
                     {step === "prices" ? (
                       <Button type="submit" disabled={isPending} size="small">
                         {isPending && <Loader className="animate-spin" />}
-                        {t("actions.save")}
+                        Save
                       </Button>
                     ) : (
                       <Button
@@ -576,7 +574,7 @@ const AutoGenerateVariants = ({
                           setStep("prices");
                         }}
                       >
-                        {t("actions.continue")}
+                        Continue
                       </Button>
                     )}
                   </div>
