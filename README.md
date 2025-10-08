@@ -51,6 +51,25 @@ A **Medusa.js admin widget** that automatically creates all **missing product va
 npm i @306technologies/auto-gen-variants
 ```
 
+### Add the plugin in your Medusa config
+
+**ESM / TypeScript** — `medusa.config.ts`
+
+````ts
+import { defineConfig } from "@medusajs/medusa"
+
+export default defineConfig({
+  // ...other settings
+  plugins: [
+    {
+      resolve: "@306technologies/auto-gen-variants",
+      options: {}, // no options required
+    },
+  ],
+})
+
+
+
 ---
 
 ## How It Works (at a glance)
@@ -73,7 +92,7 @@ npm uninstall @306technologies/auto-gen-variants
 rm -rf node_modules package-lock.json
 npm i
 npm i @306technologies/auto-gen-variants@latest
-```
+````
 
 ---
 
