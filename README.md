@@ -7,8 +7,9 @@
     </picture>
   </a>
 </p>
+
 <h1 align="center">
-  Medusa Plugin Starter
+  Auto-Generate Variants — Medusa Admin Widget
 </h1>
 
 <h4 align="center">
@@ -17,50 +18,35 @@
 </h4>
 
 <p align="center">
-  Building blocks for digital commerce
+  Build and manage variants without the manual grind.
 </p>
-<p align="center">
-  <a href="https://github.com/medusajs/medusa/blob/master/CONTRIBUTING.md">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="PRs welcome!" />
-  </a>
-    <a href="https://www.producthunt.com/posts/medusa"><img src="https://img.shields.io/badge/Product%20Hunt-%231%20Product%20of%20the%20Day-%23DA552E" alt="Product Hunt"></a>
-  <a href="https://discord.gg/xpCwq3Kfn8">
-    <img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Discord Chat" />
-  </a>
-  <a href="https://twitter.com/intent/follow?screen_name=medusajs">
-    <img src="https://img.shields.io/twitter/follow/medusajs.svg?label=Follow%20@medusajs" alt="Follow @medusajs" />
-  </a>
-</p>
+
+---
+
+# @306technologies/auto-gen-variants
+
+A **Medusa.js admin widget** that automatically creates all **missing product variant combinations** from your product’s option values — no more manual setup.
+
+- 🚀 **1-click generation** of missing variants
+- 🧮 **Accurate combinations** from selected option values
+- 🛡️ **Non-destructive**: existing variants are left as-is
+- 🎯 **Built for Medusa v2 Admin** (Admin Bundler)
+
+> **Status:** Actively iterating on the **0.1.x** line before a stable `1.x`.
+
+---
 
 ## Compatibility
 
-This starter is compatible with versions >= 2.4.0 of `@medusajs/medusa`.
+- **Medusa:** `@medusajs/medusa >= 2.5.0`
+- **Admin UI:** `@medusajs/ui >= 4.0.3`
+- **Node:** `>= 20`
 
-## Getting Started
+---
 
-Visit the [Quickstart Guide](https://docs.medusajs.com/learn/installation) to set up a server.
+## Install
 
-Visit the [Plugins documentation](https://docs.medusajs.com/learn/fundamentals/plugins) to learn more about plugins and how to create them.
-
-Visit the [Docs](https://docs.medusajs.com/learn/installation#get-started) to learn more about our system requirements.
-
-## What is Medusa
-
-Medusa is a set of commerce modules and tools that allow you to build rich, reliable, and performant commerce applications without reinventing core commerce logic. The modules can be customized and used to build advanced ecommerce stores, marketplaces, or any product that needs foundational commerce primitives. All modules are open-source and freely available on npm.
-
-Learn more about [Medusa’s architecture](https://docs.medusajs.com/learn/introduction/architecture) and [commerce modules](https://docs.medusajs.com/learn/fundamentals/modules/commerce-modules) in the Docs.
-
-## Community & Contributions
-
-The community and core team are available in [GitHub Discussions](https://github.com/medusajs/medusa/discussions), where you can ask for support, discuss roadmap, and share ideas.
-
-Join our [Discord server](https://discord.com/invite/medusajs) to meet other community members.
-
-## Other channels
-
-- [GitHub Issues](https://github.com/medusajs/medusa/issues)
-- [Twitter](https://twitter.com/medusajs)
-- [LinkedIn](https://www.linkedin.com/company/medusajs)
-- [Medusa Blog](https://medusajs.com/blog/)
-
-# auto-gen-variants
+```bash
+# in your Medusa project
+npm i @306technologies/auto-gen-variants
+```
