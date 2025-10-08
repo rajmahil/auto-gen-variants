@@ -51,9 +51,27 @@ A **Medusa.js admin widget** that automatically creates all **missing product va
 npm i @306technologies/auto-gen-variants
 ```
 
+---
+
 ## How It Works (at a glance)
 
 - Reads the product’s option values (e.g., Size × Color × Material).
 - Computes the cartesian product, filters out existing variants.
 - Creates the remaining variants through Medusa APIs.
 - Shows a quick summary (created vs. already existed).
+
+---
+
+## Troubleshooting
+
+### Widget not appearing
+
+**Fix checklist**
+
+1. **Reinstall clean**
+   ```bash
+   npm uninstall @306technologies/auto-gen-variants
+   rm -rf node_modules package-lock.json
+   npm i
+   npm i @306technologies/auto-gen-variants@latest
+   ```
