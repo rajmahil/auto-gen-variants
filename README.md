@@ -16,9 +16,9 @@
   <a href="https://www.306technologies.com" aria-label="306 Technologies">
     <picture>
       <!-- Replace these two srcset URLs with your own dark/light logo files -->
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/your-org/your-repo/main/assets/306-logo-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/your-org/your-repo/main/assets/306-logo-light.svg">
-      <img alt="306 Technologies" src="https://raw.githubusercontent.com/your-org/your-repo/main/assets/306-logo-light.svg" height="56">
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rajmahil/auto-gen-variants/src/assets/306-logo-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rajmahil/auto-gen-variants/src/assets/306-logo-light.svg">
+      <img alt="306 Technologies" src="https://raw.githubusercontent.com/rajmahil/auto-gen-variants/src/assets/306-logo-light.svg" height="56">
     </picture>
   </a>
 </p>
