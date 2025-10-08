@@ -314,8 +314,11 @@ const AutoGenerateVariants = ({
       setStep("details");
       form.reset();
     },
-    onError: () => {
-      toast.error("Failed to create variants. Please try again.");
+    onError: (res: { message: string }) => {
+      console.error("Failed to create variants:", res);
+      toast.error(
+        `Failed to create variants: ${res?.message || "Unknown error"}`
+      );
     },
   });
 
