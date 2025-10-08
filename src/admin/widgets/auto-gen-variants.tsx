@@ -528,7 +528,12 @@ const AutoGenerateVariants = ({
                 onSubmit={handleSubmit}
                 className="flex h-full flex-col overflow-hidden"
               >
-                <FocusModal.Header className="!py-0">
+                <FocusModal.Header
+                  style={{
+                    paddingTop: "0px !important",
+                    paddingBottom: "0px !important",
+                  }}
+                >
                   <div className="border-l w-full">
                     <ProgressTabs.List>
                       <ProgressTabs.Trigger value="details" status="completed">

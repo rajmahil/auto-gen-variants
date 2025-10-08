@@ -1,6 +1,6 @@
 {
   "name": "@306technologies/auto-gen-variants",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "A Medusa.js admin widget that automatically generates product variants based on selected product options.",
   "author": "306 Technologies (https://www.306technologies.com/)",
   "repository": {
@@ -13,19 +13,21 @@
   "homepage": "https://github.com/rajmahil/auto-gen-variants#readme",
   "license": "MIT",
   "files": [
-    ".medusa/server"
+    ".medusa/server/src/admin/index.mjs",
+    ".medusa/server/src/subscribers",
+    "README.md",
+    "LICENSE",
+    "package.json"
   ],
   "exports": {
     "./package.json": "./package.json",
-    "./workflows": "./.medusa/server/src/workflows/index.js",
-    "./.medusa/server/src/modules/*": "./.medusa/server/src/modules/*/index.js",
     "./providers/*": "./.medusa/server/src/providers/*/index.js",
     "./admin": {
       "import": "./.medusa/server/src/admin/index.mjs",
       "require": "./.medusa/server/src/admin/index.js",
       "default": "./.medusa/server/src/admin/index.js"
     },
-    "./*": "./.medusa/server/src/*.js"
+    "./subscribers/*": "./.medusa/server/src/subscribers/*"
   },
   "keywords": [
     "medusa",
